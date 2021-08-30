@@ -10,7 +10,7 @@ class SLD(tf.keras.callbacks.Callback):
     def __init__(self, port="9000", path="",
                  field="data",
                  headers=None,
-                 send_as_json=False,
+                 send_as_json=True,
                  mode=["on_epoch_end"]):
 
         super(SLD, self).__init__()
