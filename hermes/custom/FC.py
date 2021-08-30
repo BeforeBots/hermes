@@ -4,7 +4,7 @@ from collections import defaultdict
 
 
 class FileCallback(tf.keras.callbacks.Callback):
-    def __init__(self, save_format=""):
+    def __init__(self, save_format="", filepath=""):
         super(FileCallback, self).__init__()
         self.save_format = save_format
         self.dfparams = defaultdict(list)
